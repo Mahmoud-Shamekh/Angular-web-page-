@@ -1,0 +1,59 @@
+@font-face {
+    font-family: HomeFont-1;
+    src: url(../../../assets/fonts/OpenSans_SemiCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: HomeFont-2;
+    src: url(../../../assets/fonts/OpenSans_SemiCondensed-Medium.ttf);
+}
+
+
+
+.content {
+    background: #FFFFFF;
+    /* opacity: 0.5; */
+    border: 0.5px solid #424242;
+    border-radius: 8px;
+    width: 282px;
+    height: auto;
+    padding-bottom: 16px;
+
+
+}
+
+.cont h3{
+    margin: 12px 12px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: HomeFont-1;
+
+}
+
+.all{
+    margin: 8px 12px 1.5px 12px;
+}
+
+.all label{
+    margin-left: 9px;
+    font-family: HomeFont-2;
+       color: #1E1E1E;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+}
+
+.other{
+    margin: 1.5px 12px 0 12px;
+}
+
+.other label{
+    margin-left: 9px;
+    font-family: HomeFont-2;
+        color: #1E1E1E;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+}
+

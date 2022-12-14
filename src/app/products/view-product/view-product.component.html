@@ -1,0 +1,77 @@
+<div class="contain">
+    <div class="top-part">
+        <div class="header">
+            <div class="left-part">
+                <a>
+                    <img src="../../../assets/image/Content (1).svg" alt="logo">
+                    <span>ClickTic</span>
+                </a>
+                <a class="home-title">Home</a>
+            </div>
+            <div class="right-part">
+                <div class="search-icon">
+                    <img src="../../../assets/image/round-search-24px.svg" alt="logo">
+                    <input
+                    [(ngModel)]="search"
+                    (keyup.enter)="searchForProduct()"
+                    type="search" placeholder="search">
+                </div>
+
+                <div class="wrap">
+                    <span class="num"> 3</span>
+                   <img src="../../../assets/image/Vector.svg" alt="logo">
+
+                </div>
+                 <a>
+                <span class="acc" >Account</span>
+                    </a>
+                </div>
+        </div>
+
+      <div class="category" >
+            <h1> iPhone</h1>
+            <div class="head">
+                <a>Home</a>/<a>Product</a>/<a>Smart Phones</a>
+             </div>
+        <div class="cont">
+            <div class="select-cat">
+          <app-select-category
+
+          [title]="'Products'"
+          [dataSelected]="categories"
+          (SelectData)="onFilterProduct($event)"
+
+          >
+        </app-select-category>
+            </div>
+                <div class="item-product" >
+
+                    <app-item-product *ngFor="let item of product "
+                         [data]="item"
+                    ></app-item-product>
+
+                    <div>
+
+                    </div>
+                </div>
+        </div>
+           </div>
+         </div>
+                        <div class="pagination" id ="myPagin">
+                            <a>❮</a>
+                            <a  *ngFor='let in of counter(10) ;let i = index'
+                            (click)=" getProducts(i)"
+                            >{{i+1}}</a>
+                            <a>❯</a>
+                        </div>
+
+            <div class="bottom-part">
+                <a class="left-footer">
+                    <img src="../../../assets/image/Content (1).svg" alt="logo">
+                    <span class="title-footer">ClickTik</span>
+                </a>
+                <span class="right-footer">© 2022 ClickTik</span>
+
+            </div>
+</div>
+

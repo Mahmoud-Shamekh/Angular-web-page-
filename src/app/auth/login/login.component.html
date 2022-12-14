@@ -1,0 +1,65 @@
+<div class="contain">
+    <div class="top-part">
+        <div class="header">
+            <div class="left-part">
+                <a>
+                    <img src="../../../assets/image/Content (1).svg" alt="logo">
+                    <span>ClickTic</span>
+                </a>
+                <a class="home-title">Home</a>
+            </div>
+
+            <a class="right-part">Login</a>
+        </div>
+        <div class="login">
+            <div>
+                <img src="../../../assets/image/Content.svg" alt="icon">
+            </div>
+
+            <h2 class="log-title">Login to your account</h2>
+            <p class="log-content"> Welcome back! Please enter your details. </p>
+
+            <form (ngSubmit)="onSubmit()" #form="ngForm">
+                <div class="mail">
+                    <label for="mail">Email</label>
+                    <input
+                    placeholder="Enter your username"
+                    type="text"
+                     id="mail"
+                     ngModel
+                     required
+                     name="username"
+
+                      #UserName="ngModel">
+                    <span class="block" *ngIf="!UserName.valid && UserName.touched "> Please enter UserName</span>
+                </div>
+                <div class="pass">
+                    <label for="pass">Password</label>
+                    <input
+                    type="password"
+                    id="pass"
+                    ngModel
+                    required
+                    name="password"
+                    #Password="ngModel">
+                    <span class="block" *ngIf="!Password.valid && Password.touched "> Please enter your Password*</span>
+                </div>
+
+                <button type="submit" [disabled]="!form.valid"> Signin</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="bottom-part">
+        <a class="left-footer">
+
+            <img src="../../../assets/image/Content (1).svg" alt="logo">
+
+            <span class="title-footer">ClickTik</span>
+        </a>
+        <span class="right-footer">© 2022 ClickTik</span>
+
+    </div>
+</div>
+

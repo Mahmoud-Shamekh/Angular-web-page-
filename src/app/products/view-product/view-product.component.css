@@ -1,0 +1,243 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../../assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(../../../assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: HomeFont-1;
+    src: url(../../../assets/fonts/OpenSans_SemiCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: HomeFont-2;
+    src: url(../../../assets/fonts/OpenSans_SemiCondensed-Medium.ttf);
+}
+.contain {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+.pagination {
+    display: flex;
+        justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.flag{
+    background: #FFFFFF;
+        border: 0.7px solid rgba(48, 55, 80, 0.08);
+        border-radius: 4px;
+        color:#979797 !important; ;
+
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 10%;
+    border-bottom: 1px solid gainsboro;
+
+
+}
+
+.home-title
+ {
+    font-family: mySecondFont;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #667085;
+}
+
+.left-part span {
+    font-family: myFirstFont;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-part img {
+    padding-right: 10px;
+}
+
+a.home-title {
+    padding-left: 80px;
+}
+
+.right-part{
+    display: flex;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+
+}
+.item-product{
+        display: inline-flex;
+            flex-wrap: wrap;
+
+}
+.category{
+    width: 80%;
+    margin: 80px 10%;
+
+}
+.select-cat{
+    width: 282px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 12px;
+
+}
+.search-icon {
+    background: #FFFFFF;
+    border: 0.5px solid #424242;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+height: 32px;
+width: 319px;
+opacity: .5;
+
+}
+
+.wrap{
+    position: relative;
+
+}
+.num{
+        position: absolute;
+        font-family:HomeFont-1 ;
+            right: -3px;
+            background: #41CCCC;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+            width: 16px;
+            font-weight: 400;
+            font-size: 10px;
+            color: #344054;
+            line-height: 12px;
+            display: flex;
+            justify-content: space-around;
+}
+.acc{
+    font-family: mySecondFont;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #667085;
+        padding-left: 18.4px;
+}
+
+.head{
+    margin: 31px 0px;
+}
+
+.wrap img{
+padding-left: 27px;
+}
+
+.search-icon{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.select-menu{
+    width: 282px;
+    height: auto;
+    background: #FFFFFF;
+        /* opacity: 0.5; */
+        border: 0.5px solid #424242;
+        border-radius: 8px;
+}
+
+.category h1{
+font-family: HomeFont-1;
+color: #1E1E1E;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+
+.bottom-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 10%;
+    background: #1D2939;
+
+}
+
+.left-footer img {
+    padding-right: 10px;
+}
+
+.left-footer span {
+    color: #FFFFFF;
+    font-family: mySecondFont;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.bottom-part span {
+    color: #98A2B3;
+    font-family: mySecondFont;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+.search-icon input{
+        border: none;
+            background-color: transparent;
+            resize: none;
+            outline: none;
+}
+
+.pagination {
+        display: flex;
+            justify-content: center;
+            cursor: pointer;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+
+    color: white;
+}
+
+
+
+
+
+

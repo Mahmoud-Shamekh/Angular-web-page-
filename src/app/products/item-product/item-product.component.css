@@ -1,0 +1,71 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../../assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(../../../assets/fonts/Inter-Regular.ttf);
+}
+
+.content{
+background: #FFFFFF;
+
+    border: 0.5px solid #41CCCC;
+    border-radius: 8px;
+    width: 282px;
+    height:580px ;
+    margin: 0px 12px 24px ;
+
+}
+
+.image img{
+    width: 100%;
+        text-align: center;
+border-radius: 8px;
+        height: 258px;
+}
+
+.descripton{
+        display: flex;
+            flex-direction: column;
+            width: 240px;
+            margin: 10px 24px;
+}
+
+.descripton h1{
+    font-family: mySecondFont;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+}
+.desc{
+    height: 50px;
+    overflow: hidden;
+}
+.rate{
+display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.rate img{
+    padding-right: 10px;
+}
+
+button{
+    background: #41CCCC;
+        border-radius: 4px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        margin: 16px 16px;
+        padding: 10px;
+        border: 1px solid #41CCCC;
+}
+

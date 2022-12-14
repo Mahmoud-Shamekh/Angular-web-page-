@@ -1,0 +1,20 @@
+<div class="content">
+    <div class="cart">
+<div class="cont">
+        <h3 > {{title}} </h3>
+<form>
+        <div class="categories" (change)="selectData($event)">
+    <div class="all">
+       <input type="radio" id="all"  name="categ" value="All"  >
+       <label for="all">All</label>
+    </div >
+       <div class="other" *ngFor="let data of dataSelected" >
+      <input id="other-cat" type="radio" name="categ" value="{{data}}" >
+      <label for="other-cat" >{{data}}</label>
+    </div>
+
+        </div>
+        </form>
+    </div>
+</div>
+
